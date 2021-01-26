@@ -1,11 +1,21 @@
 import kotlin.Int as Int
 
 fun MakeRecipes(){
-    print("::Creando Receta::")
+    print("::Hacer Receta::")
+    println("""
+        1. Agua
+        2. Leche
+        3. Carne
+        4. Verduras
+        5. Frutas
+        6. Cereal
+        7. Huevos
+        8. Aceites
+    """.trimIndent())
 }
 
 fun ViewRecipes(){
-    print("::Mis Recetas::")
+    print("::Ver Recetas::")
 }
 
 fun main(args: Array<String>) {
@@ -27,6 +37,7 @@ fun main(args: Array<String>) {
         when(response){
             1 -> MakeRecipes()
             2 -> ViewRecipes()
+            3 -> continue
         }
         break
     }while (response != 3)
